@@ -18,6 +18,7 @@ namespace PuzzleRobotTest
         List<Piece> maxCountPieces = new List<Piece>();
         List<Piece> finishList = new List<Piece>();
         int similarityIndex = 0;
+        int accuracy = 80;
 
         public Form1()
         {
@@ -62,6 +63,7 @@ namespace PuzzleRobotTest
             picBox.Add(new Piece(pictureBox9));
 
             similarityIndex = 390;
+            accuracy = 80;
             makePuzzleTogether();
 
             debugSimilarityToFile();
