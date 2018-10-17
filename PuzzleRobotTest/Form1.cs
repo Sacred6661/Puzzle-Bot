@@ -200,6 +200,14 @@ namespace PuzzleRobotTest
                     //MessageBox.Show("-10 = " + similarityIndex);
                     makePuzzleTogether();
                 }
+                else if (accuracy > 40)
+                {
+                    accuracy -= 5;
+                    similarityIndex = 390;
+                    cleanFinishList();
+                    //MessageBox.Show("-10 = " + similarityIndex);
+                    makePuzzleTogether();
+                }
                 else
                     MessageBox.Show("Error =(");
             }
