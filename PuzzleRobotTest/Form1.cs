@@ -294,7 +294,7 @@ namespace PuzzleRobotTest
 
                 //difference 80, it could be some other integer, but smaller could skip good pieces
                 //end bigger - could take too much pieces
-                if (res <= 80)
+                if (res <= accuracy)
                     count++;
                 
             }
@@ -312,7 +312,7 @@ namespace PuzzleRobotTest
 
                 double res = getDifference(x, y);
 
-                if (res <= 80)
+                if (res <= accuracy)
                     count++;
             }
 
@@ -329,7 +329,7 @@ namespace PuzzleRobotTest
 
                 double res = getDifference(x, y);
 
-                if (res <= 40)
+                if (res <= accuracy)
                     count++;
             }
 
@@ -346,7 +346,7 @@ namespace PuzzleRobotTest
 
                 double res = getDifference(x, y);
 
-                 if (res <= 80)
+                 if (res <= accuracy)
                     count++;
             }
 
